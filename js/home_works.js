@@ -68,37 +68,35 @@ const moveBlock = () => {
 moveBlock()
 
 //timer
-const seconds = document.querySelector('#seconds')
+const start = document.querySelector("#start")
+const stop = document.querySelector("#stop")
+const reset = document.querySelector("#reset")
+const second = document.querySelector("#seconds")
 
-let intervalId;
-let secondsValue = 0;
-let isRunning = false ;
+let count = 0
+let intervall
+const startS = () => {
+    intervall = setInterval(()=>{
+        count++
+        second.innerHTML = count
 
-const startTimer = () => {
-    if(!isRunning) {
-        intervalId = setInterval(() => {
-            secondsValue++
-            seconds.innerHTML = secondsValue
-        }, 1000)
-    }
-    isRunning = true
+    },1000)
+} 
+start.onclick = startS
+
+const stopes = () =>{
+    clearInterval(intervall)
 }
+stop.onclick = stopes
 
-
-const stopTimer = () => {
-    clearInterval(intervalId)
-    isRunning = false
+const resets = () => {
+    stopes()
+    count = 0
+    second.innerHTML = count
 }
-const resetTimer = () => {
-    clearInterval(intervalId)
-    secondsValue = 0
-    seconds.innerHTML = secondsValue
-    isRunning = false
-}
+reset.onclick = resets
 
-document.querySelector('#start').addEventListener('click', startTimer)
-document.querySelector('#stop').addEventListener('click', stopTimer)
-document.querySelector('#reset').addEventListener('click', resetTimer)
+
 
 
 //character 
