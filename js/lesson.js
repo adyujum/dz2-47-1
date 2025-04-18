@@ -109,4 +109,47 @@ converter(usdInput, somInput, euroInput)
 converter(euroInput,somInput,usdInput)
 
 
-// hell callback
+// CARD SWITCHER
+const cardBlock = document.querySelector('.card')
+const btnNext = document.querySelector('#btn-next')
+const btnPrev = document.querySelector('#btn-prev')
+
+let cardId = 1
+let maxId = 200
+
+const cardSwitcher = () => {
+    fetch(`https://jsonplaceholder.typicode.com/todos/${cardId}`)
+        .then(response => response.json())
+        .then((data) => {
+            const {title, completed, id} = data
+            cardBlock.innerHTML = `
+            <p>${title}</p>
+            <p>${completed}</p>
+            <span>${id}</span>
+            `
+        })
+}
+const cardSwitcherNext = () => {
+    if(cardId >= maxId) {
+        cardId = 1
+    } else {
+        cardId++
+    }
+    cardSwitcher()
+}
+const cardSwitcherPrev = () => {
+    if(cardId <= 1) {
+        cardId = maxId
+    } else {
+        cardId--
+    }
+    cardSwitcher()
+}
+cardSwitcher()
+btnNext.onclick = () => cardSwitcherNext()
+btnPrev.onclick = () => cardSwitcherPrev()
+
+
+fetch('https://jsonplaceholder.typicode.com/posts')
+    .then(response => response.json())
+    .then((data) => console.log(data))

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="733efc4d-a2ed-4b03-b37a-512a081ff1bd" name="Changes" comment="" />
+    <list default="true" id="733efc4d-a2ed-4b03-b37a-512a081ff1bd" name="Changes" comment="mfrk" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -118,10 +118,24 @@
       <workItem from="1743408769307" duration="349000" />
       <workItem from="1743686217658" duration="11000" />
       <workItem from="1744437868212" duration="10000" />
+      <workItem from="1744888126581" duration="341000" />
     </task>
+    <task id="LOCAL-00001" summary="mfrk">
+      <option name="closed" value="true" />
+      <created>1744888164508</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1744888164508</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="mfrk" />
+    <option name="LAST_COMMIT_MESSAGE" value="mfrk" />
   </component>
 </project>
