@@ -29,6 +29,24 @@ const handleScrolle = () => {
 
 window.addEventListener('scroll', handleScrolle)
 
-setTimeout(() => {
-    openModal()
-},10000)
+//POST DATA
+
+const token = '7809070698:AAEA0pFjM70lJrJMH16ZUwcawqgoI2bvqoQ'
+const form = document.querySelector('form')
+const chat_id = '@adyu08'
+const URL_API = `https://api.telegram.org/bot${token}/sendMessage`;
+
+form.onsubmit = (event) => {
+    event.preventDefault()
+    const {name,phone,gmail} =  Object.fromEntries(new FormData(form).entries())
+    const text = `Имя: ${name} \nНомер:${phone} \nПочта:${gmail}`
+    console.log(text)
+    fetch(URL_API, {
+        method: 'POST',
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({
+            chat_id: chat_id,
+            text: text,
+        }),
+    })
+}

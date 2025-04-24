@@ -1,17 +1,32 @@
 [
-    {
-        "name": "Alyonushka",
-        "age": "20-25",
-        "photo": "https://zefirka.club/uploads/posts/2022-10/1664704636_3-zefirka-club-p-zhena-ili-muromtsa-v-multike-4.jpg"
-    },
-    {
-        "name": "Nastasya Filippovna",
-        "age": "20-25",
-        "photo": "https://lh3.googleusercontent.com/proxy/cV7A1aC0C205rcoJl-pfaMEZUAFRswFGrFkxsFrpKDeP3de1_auIKTJ_LWFu87VVFBlgeBbCsahOsjUXrWndwkuJ0eAPlnE"
-    },
-    {
-        "name": "Lyubava",
-        "age": "20-25",
-        "photo": "https://igroutka.su/uploads/posts/2024-11/1732434065_1732434065_tri-bogatyrja-i-morskoj-car-ljubava.jpg"
-    }
+   {
+    "name": "Ночь у берега",
+    "release": "2021",
+    "img": "https://readrate.com/img/pictures/book/265/265826/2658261/w240h400-0f9acd9e.jpg"
+   },
+   {
+    "name": "Ночные этюды",
+    "release": "2019",
+    "img": "https://i.pinimg.com/736x/2f/f1/9f/2ff19f94c1774cca9edf71ae28b7faa9.jpg"
+   },
+   {
+    "name": "Убить сталкера",
+    "release": "2016",
+    "img": "https://i.pinimg.com/736x/a3/9c/4f/a39c4ff93600b9bf55f5a9979b46d399.jpg"
+   },
+   {
+    "name": "Отброс",
+    "release": "2022",
+    "img": "https://i.pinimg.com/736x/7d/1f/14/7d1f146a21ab24a8eb567e51e7825be8.jpg"
+   },
+   {
+    "name": "Бездна",
+    "release": "2022",
+    "img": "https://i.pinimg.com/736x/43/4f/1e/434f1e55cce0f82a6466aa205f17175c.jpg"
+   },
+   {
+    "name": "Джинкс",
+    "release": "2022",
+    "img": "https://i.pinimg.com/736x/c2/06/ba/c206ba6098855db4c1106aa0a1dd11ce.jpg"
+   }
 ]

@@ -4,7 +4,7 @@ const gmailInput = document.querySelector("#gmail_input");
 const gmailButton = document.querySelector("#gmail_button");
 const gmailResult = document.querySelector("#gmail_result");
 
-const regExp = /^[a-z0-9.]+@gmail.com$/
+const regExp = /^[a-z0-9.]+[A-Z]/
 
 gmailButton.onclick = () => {
     if(regExp.test(gmailInput.value)) {
@@ -128,12 +128,11 @@ xhr.onload = function () {
             h3.innerHTML = person.name;
             characterCard.appendChild(h3);
 
-            const house = document.createElement('p');
-            house.innerHTML = person.what_a_ninja;
-            characterCard.appendChild(house);
+            // const house = document.createElement('p');
+            // characterCard.appendChild(house);
 
             const age = document.createElement('p');
-            age.innerHTML = `Age: ${person.age}`;
+            age.innerHTML = `Release: ${person.release}`;
             characterCard.appendChild(age);
 
 

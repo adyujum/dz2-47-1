@@ -19,9 +19,9 @@ body {
     height: 50px;
     font-size: 20px;
     cursor: pointer;
-    border: 1px solid var(--orange);
+    border: 1px solid white;
     background: black;
-    color: var(--orange);
+    color: #f068aa;
     border-radius: 8px;
 }
 
@@ -31,7 +31,7 @@ body {
 
 .btn:active {
     background: #56585D;
-    border: 2px solid var(--orange);
+    border: 2px solid #f068aa;
 }
 
 a {
@@ -77,12 +77,12 @@ h4 {
 }
 
 strong {
-    color: #F79300;
+    color: #c61068;
 }
 
 label {
     font-size: 24px;
-    color: var(--orange);
+    color: #c61068;
 }
 
 input {
@@ -90,9 +90,9 @@ input {
     height: 50px;
     font-size: 20px;
     padding-left: 5px;
-    color: var(--orange);
-    background: black;
-    border: 2px solid var(--orange);
+    color: #c61068;
+    background: rgb(228, 227, 227);
+    border: 2px solid #c61068;
 }
 
 .checker {
@@ -104,7 +104,7 @@ input {
     display: block;
     width: 100px;
     height: 100px;
-    background: var(--orange);
+    background: #c61068;
     color: black;
     font-size: 20px;
     text-transform: uppercase;
@@ -114,12 +114,12 @@ input {
 }
 
 .btn-slide:hover {
-    background: #b68733 !important;
+    background: #f068aa;
     cursor: pointer;
     color: white;
 }
 
 :root {
-    --orange: orange;
+    color: #c61068;
     --black: black;
 }
